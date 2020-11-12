@@ -1,3 +1,4 @@
 {
-  "api_key": "123456789"
+  "api_key": "123456789",
+  "domain": "https://prod.api2.process.st/reporting"
 }
