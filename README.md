@@ -16,13 +16,10 @@ This tap:
 
 Read the Singer Getting Started guide [here](https://github.com/singer-io/getting-started).
 
-
-
-
-
 ## Quick Start
 
-_Install Python3, Pip & Virtual Envs_
+Ensure you have Python3, Pip & Virtual Envs installed.  A guide is available 
+[here](https://github.com/singer-io/getting-started/blob/master/docs/RUNNING_AND_DEVELOPING.md#running-singer-with-python)
 
 1. Install
 
@@ -52,7 +49,7 @@ _Install Python3, Pip & Virtual Envs_
 
 5. Run the Tap in Sync Mode
     ```
-   tap-chargify -c config.json --catalog catalog-file.json
+   tap-process-street -c config.json --catalog catalog-file.json
     ```
    
 Copyright &copy; 2020 Process Street

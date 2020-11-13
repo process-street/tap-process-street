@@ -6,7 +6,7 @@ from tap_process_street.discover import discover
 from tap_process_street.schema import get_schemas, STREAMS
 from tap_process_street.sync import sync
 
-REQUIRED_CONFIG_KEYS = ["api_key", "domain"]
+REQUIRED_CONFIG_KEYS = ["api_key", "domain", "page_size"]
 LOGGER = singer.get_logger()
 
 @utils.handle_top_exception(LOGGER)
@@ -18,6 +18,7 @@ def main():
     if args.discover:
         catalog = discover()
         catalog.dump()
+
     # Otherwise run in sync mode
     else:
         if args.catalog:

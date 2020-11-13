@@ -1,4 +1,5 @@
 {
   "api_key": "123456789",
-  "domain": "https://prod.api2.process.st/reporting"
+  "domain": "https://prod.api2.process.st/reporting",
+  "page_size": 100
 }

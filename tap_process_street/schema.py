@@ -6,7 +6,7 @@ STREAMS = {
     'checklists': {
         'key_properties': ['id'],
         'replication_method': 'INCREMENTAL',
-        'replication_keys': ['created_date']
+        'replication_keys': ['updated_date', 'id']
     }
 }
 
