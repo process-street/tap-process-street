@@ -1,9 +1,13 @@
 import requests
 import singer
 
+from tap_process_street.constant import LIMIT_PARAM, AFTER_UPDATED_DATE_PARAM, AFTER_ID_PARAM
+
 LOGGER = singer.get_logger()
 
 """ Client for ProcessStreet API. """
+
+
 class ProcessStreet(object):
 
     def __init__(self, api_key, domain, page_size):
@@ -16,9 +20,9 @@ class ProcessStreet(object):
 
         has_more = True
         params = {
-            'limit': self.page_size,
-            'afterUpdatedDate': paramArgs['last_updated_date'],
-            'afterId': paramArgs['last_id']
+            LIMIT_PARAM: self.page_size,
+            AFTER_UPDATED_DATE_PARAM: paramArgs['last_updated_date'],
+            AFTER_ID_PARAM: paramArgs['last_id']
         }
 
         LOGGER.info("GET request to {uri} {params}".format(uri=uri, params=params))
@@ -33,9 +37,9 @@ class ProcessStreet(object):
 
             if has_more:
                 params = {
-                    'limit': self.page_size,
-                    'afterUpdatedDate': json['nextPageUpdatedDate'],
-                    'afterId': json['nextPageId'],
+                    LIMIT_PARAM: self.page_size,
+                    AFTER_UPDATED_DATE_PARAM: json['nextPageUpdatedDate'],
+                    AFTER_ID_PARAM: json['nextPageId']
                 }
 
             yield data

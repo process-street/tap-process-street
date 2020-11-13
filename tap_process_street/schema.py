@@ -2,11 +2,13 @@ import os
 import json
 from singer import metadata
 
+from tap_process_street.constant import ID_KEY, UPDATED_DATE_KEY
+
 STREAMS = {
     'checklists': {
-        'key_properties': ['id'],
+        'key_properties': [ID_KEY],
         'replication_method': 'INCREMENTAL',
-        'replication_keys': ['updated_date', 'id']
+        'replication_keys': [UPDATED_DATE_KEY, ID_KEY]
     }
 }
 
