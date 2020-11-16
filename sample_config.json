@@ -1,5 +1,5 @@
 {
-  "username": "my_username",
-  "password": "my_password",
-  "start_date": "2017-01-01T00:00:00Z"
+  "api_key": "123456789",
+  "domain": "https://prod.api2.process.st/reporting",
+  "page_size": 100
 }
