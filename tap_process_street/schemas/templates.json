@@ -22,11 +22,11 @@
       "format": "date-time"
     },
     "name": {
-      "type": ["null", "string"]
+      "type": "string"
     },
     "status" : {
       "type": "string",
-      "enum": ["Active", "Archived", "Completed", "Deleted"]
+      "enum": ["Active", "Archived", "Deleted"]
     }
   }
 }

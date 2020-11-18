@@ -9,6 +9,11 @@ STREAMS = {
         'key_properties': [ID_KEY],
         'replication_method': 'INCREMENTAL',
         'replication_keys': [UPDATED_DATE_KEY, ID_KEY]
+    },
+    'templates': {
+        'key_properties': [ID_KEY],
+        'replication_method': 'INCREMENTAL',
+        'replication_keys': [UPDATED_DATE_KEY, ID_KEY]
     }
 }
 
