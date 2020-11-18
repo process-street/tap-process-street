@@ -22,7 +22,7 @@
       "format": "date-time"
     },
     "name": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "status" : {
       "type": "string",
