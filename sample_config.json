@@ -1,5 +1,5 @@
 {
-  "api_key": "123456789",
-  "domain": "https://prod.api2.process.st/reporting",
-  "page_size": 100
+  "api_key": "<process_street_api_key>",
+  "domain": "<process_street_api_domain>",
+  "page_size": "<paginated_request_page_size>"
 }

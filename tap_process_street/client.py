@@ -25,9 +25,8 @@ class ProcessStreet(object):
             AFTER_ID_PARAM: paramArgs['last_id']
         }
 
-        LOGGER.info("GET request to {uri} {params}".format(uri=uri, params=params))
-
         while has_more:
+            LOGGER.info("GET request to {uri} {params}".format(uri=uri, params=params))
             response = requests.get(uri, stream=True, headers={"x-api-key": self.api_key}, params=params)
             response.raise_for_status()
 
