@@ -5,20 +5,22 @@
     "id": {
       "type": "string"
     },
+    "completedDate": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "completedBy": {
+      "type": ["null", "string"]
+    },
     "createdDate": {
       "type": "string",
       "format": "date-time"
     },
     "createdBy": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
-    "updatedDate": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "updatedBy": {
-      "type": "string",
+    "dueDate": {
+      "type": ["null", "string"],
       "format": "date-time"
     },
     "name": {
@@ -27,6 +29,16 @@
     "status" : {
       "type": "string",
       "enum": ["Active", "Archived", "Completed", "Deleted"]
+    },
+    "templateId" : {
+      "type": "string"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedBy": {
+      "type": "string"
     }
   }
 }

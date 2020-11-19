@@ -10,16 +10,10 @@
       "format": "date-time"
     },
     "createdBy": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
-    "updatedDate": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "updatedBy": {
-      "type": "string",
-      "format": "date-time"
+    "description": {
+      "type": ["null", "string"]
     },
     "name": {
       "type": "string"
@@ -27,6 +21,13 @@
     "status" : {
       "type": "string",
       "enum": ["Active", "Archived", "Deleted"]
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedBy": {
+      "type": "string"
     }
   }
 }
