@@ -21,10 +21,12 @@ Read the Singer Getting Started guide [here](https://github.com/singer-io/gettin
 Ensure you have Python3, Pip & Virtual Envs installed.  A guide is available 
 [here](https://github.com/singer-io/getting-started/blob/master/docs/RUNNING_AND_DEVELOPING.md#running-singer-with-python)
 
-1. Install
+1. Setup virtual environment and install
 
     ```
-    $ pip install tap-process-street
+    python -m venv ~/.virtualenvs/tap-process-street
+    source ~/.virtualenvs/tap-process-street/bin/activate
+    pip install -e .
     ```
 
 2. Create the config file
