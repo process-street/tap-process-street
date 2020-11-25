@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "createdDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedBy": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "NotCompleted",
+        "Completed"
+      ]
+    },
+    "checklistId": {
+      "type": "string"
+    },
+    "templateId": {
+      "type": "string"
+    },
+    "completedDate": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "completedBy": {
+      "type": ["null", "string"]
+    },
+    "dueDate": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "hidden": {
+      "type": ["null", "boolean"]
+    },
+    "stopped": {
+      "type": ["null", "boolean"]
+    },
+    "stop": {
+      "type": "boolean"
+    },
+    "taskType": {
+      "type": "string",
+      "enum": [
+        "Standard",
+        "Approval"
+      ]
+    },
+    "orderTree": {
+      "type": "string"
+    },
+    "groupId": {
+      "type": "string"
+    }
+  }
+}
