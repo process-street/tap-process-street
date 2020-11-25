@@ -38,7 +38,7 @@ Ensure you have Python3, Pip & Virtual Envs installed.  A guide is available
 
 4. Run the Tap in Discovery Mode
     ```
-    tap-process-street -c config.json -discover > catalog.json
+    tap-process-street -c config.json --discover > catalog.json
     ```
    
    See the Singer docs on discovery mode
@@ -46,12 +46,22 @@ Ensure you have Python3, Pip & Virtual Envs installed.  A guide is available
 
 5. Update the catalog.json to include the data you want to include in the sync.
 
+   Add `"selected": "true"` in 
+   ```
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": "true"
+          }
+        }
+    ```
+ 
    See the Singer docs on stream selection
    [here](https://github.com/singer-io/getting-started/blob/master/docs/SYNC_MODE.md#streamfield-selection) 
 
 5. Run the Tap in Sync Mode
     ```
-   tap-process-street -c config.json --catalog catalog-file.json
+   tap-process-street -c config.json --catalog catalog.json
     ```
    
 Copyright &copy; 2020 Process Street

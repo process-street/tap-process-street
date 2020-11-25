@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "templateId": {
+      "type": "string"
+    },
+    "checklistId": {
+      "type": "string"
+    },
+    "taskGroupId": {
+      "type": "string"
+    },
+    "widgetGroupId": {
+      "type": "string"
+    },
+    "widgetId": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedBy": {
+      "type": "string"
+    },
+    "fieldType": {
+      "type": "string",
+      "enum": [
+        "MultiSelect",
+        "MultiChoice",
+        "Text",
+        "Textarea",
+        "Date",
+        "Hidden",
+        "Select",
+        "File",
+        "Email",
+        "Url",
+        "Members",
+        "Unresolved"
+      ]
+    },
+    "label": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "fieldValue": {
+      "type": "object"
+    }
+  }
+}
