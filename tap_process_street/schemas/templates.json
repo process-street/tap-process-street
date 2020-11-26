@@ -13,14 +13,21 @@
       "type": "string"
     },
     "description": {
-      "type": ["null", "string"]
+      "type": [
+        "null",
+        "string"
+      ]
     },
     "name": {
       "type": "string"
     },
-    "status" : {
+    "status": {
       "type": "string",
-      "enum": ["Active", "Archived", "Deleted"]
+      "enum": [
+        "Active",
+        "Archived",
+        "Deleted"
+      ]
     },
     "updatedDate": {
       "type": "string",

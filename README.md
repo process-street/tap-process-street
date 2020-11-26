@@ -10,8 +10,6 @@ This tap:
 - Outputs the schema for each resource
 - Incrementally pulls data based on the input state
 
----
-
 ## Background
 
 Read the Singer Getting Started guide [here](https://github.com/singer-io/getting-started).
@@ -46,17 +44,18 @@ Ensure you have Python3, Pip & Virtual Envs installed.  A guide is available
 
 5. Update the catalog.json to include the data you want to include in the sync.
 
-   Add `"selected": "true"` in 
-   ```
-        {
-          "breadcrumb": [],
-          "metadata": {
-            "selected": "true"
-          }
-        }
+   To select a stream add `"selected": "true"` to it's root `"breadcrumb": []` metadata section in the catalog 
+    ```
+    {
+      "breadcrumb": [],
+      "metadata": {
+        "selected": "true",
+        ...
+      }
+    }
     ```
  
-   See the Singer docs on stream selection
+   See the Singer docs for more advanced stream selection
    [here](https://github.com/singer-io/getting-started/blob/master/docs/SYNC_MODE.md#streamfield-selection) 
 
 5. Run the Tap in Sync Mode

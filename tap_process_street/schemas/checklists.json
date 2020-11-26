@@ -6,11 +6,17 @@
       "type": "string"
     },
     "completedDate": {
-      "type": ["null", "string"],
+      "type": [
+        "null",
+        "string"
+      ],
       "format": "date-time"
     },
     "completedBy": {
-      "type": ["null", "string"]
+      "type": [
+        "null",
+        "string"
+      ]
     },
     "createdDate": {
       "type": "string",
@@ -20,17 +26,28 @@
       "type": "string"
     },
     "dueDate": {
-      "type": ["null", "string"],
+      "type": [
+        "null",
+        "string"
+      ],
       "format": "date-time"
     },
     "name": {
-      "type": ["null", "string"]
+      "type": [
+        "null",
+        "string"
+      ]
     },
-    "status" : {
+    "status": {
       "type": "string",
-      "enum": ["Active", "Archived", "Completed", "Deleted"]
+      "enum": [
+        "Active",
+        "Archived",
+        "Completed",
+        "Deleted"
+      ]
     },
-    "templateId" : {
+    "templateId": {
       "type": "string"
     },
     "updatedDate": {

@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedBy": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Created",
+        "Deleted"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Standard",
+        "Anonymous",
+        "Api",
+        "Group"
+      ]
+    },
+    "accessLevel": {
+      "type": "string",
+      "enum": [
+        "Standard",
+        "Guest",
+        "Admin"
+      ]
+    }
+  }
+}
