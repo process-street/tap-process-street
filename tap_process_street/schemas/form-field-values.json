@@ -51,6 +51,9 @@
         "Unresolved"
       ]
     },
+    "key": {
+      "type": "string"
+    },
     "label": {
       "type": [
         "null",
@@ -60,8 +63,11 @@
     "required": {
       "type": "boolean"
     },
-    "fieldValue": {
-      "type": "object"
+    "value": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
   }
 }

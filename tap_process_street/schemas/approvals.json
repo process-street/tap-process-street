@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedBy": {
+      "type": "string"
+    },
+    "approvalTask": {
+      "type": "string"
+    },
+    "subjectTask": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "reviewedBy": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string",
+      "nullable": true
+    },
+    "timesApproved": {
+      "type": "integer"
+    },
+    "timesRejected": {
+      "type": "integer"
+    }
+  }
+}

@@ -22,7 +22,7 @@ Ensure you have Python3, Pip & Virtual Envs installed.  A guide is available
 1. Setup virtual environment and install
 
     ```
-    python -m venv ~/.virtualenvs/tap-process-street
+    python3 -m venv ~/.virtualenvs/tap-process-street
     source ~/.virtualenvs/tap-process-street/bin/activate
     pip install -e .
     ```

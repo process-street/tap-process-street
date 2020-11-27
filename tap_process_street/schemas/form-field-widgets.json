@@ -51,6 +51,9 @@
         "Unresolved"
       ]
     },
+    "key": {
+      "type": "string"
+    },
     "label": {
       "type": [
         "null",
