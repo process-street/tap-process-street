@@ -36,8 +36,10 @@
       "type": "string"
     },
     "comment": {
-      "type": "string",
-      "nullable": true
+      "type": [
+        "null",
+        "string"
+      ]
     },
     "timesApproved": {
       "type": "integer"
