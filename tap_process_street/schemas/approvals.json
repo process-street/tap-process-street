@@ -5,15 +5,6 @@
     "id": {
       "type": "string"
     },
-    "templateId": {
-      "type": "string"
-    },
-    "taskGroupId": {
-      "type": "string"
-    },
-    "widgetGroupId": {
-      "type": "string"
-    },
     "createdDate": {
       "type": "string",
       "format": "date-time"
@@ -28,40 +19,33 @@
     "updatedBy": {
       "type": "string"
     },
-    "orderTree": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "fieldType": {
-      "type": "string",
-      "enum": [
-        "MultiSelect",
-        "MultiChoice",
-        "Text",
-        "Textarea",
-        "Date",
-        "Hidden",
-        "Select",
-        "File",
-        "Email",
-        "Url",
-        "Members",
-        "Unresolved"
-      ]
-    },
-    "key": {
+    "approvalTask": {
       "type": "string"
     },
-    "label": {
+    "subjectTask": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "reviewedBy": {
+      "type": "string"
+    },
+    "comment": {
       "type": [
         "null",
         "string"
       ]
     },
-    "required": {
-      "type": "boolean"
+    "timesApproved": {
+      "type": "integer"
+    },
+    "timesRejected": {
+      "type": "integer"
     }
   }
 }

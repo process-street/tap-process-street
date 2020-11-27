@@ -2,6 +2,7 @@ import json
 import os
 
 STREAMS = [
+    'approvals',
     'checklists',
     'form-field-values',
     'form-field-widgets',
