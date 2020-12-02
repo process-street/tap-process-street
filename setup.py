@@ -11,8 +11,8 @@ setup(
     py_modules=["tap_process_street"],
     install_requires=[
         # NB: Pin these to a more specific version for tap reliability
-        "singer-python",
-        "requests",
+        "singer-python==5.9.1",
+        "requests==2.24.0",
     ],
     entry_points="""
     [console_scripts]
