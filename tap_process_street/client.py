@@ -8,7 +8,7 @@ LOGGER = singer.get_logger()
 """ Client for ProcessStreet API. """
 
 
-class ProcessStreet(object):
+class ProcessStreet:
 
     def __init__(self, api_key, domain, page_size):
         self.api_key = api_key
@@ -26,7 +26,7 @@ class ProcessStreet(object):
         }
 
         while has_more:
-            LOGGER.info("GET request to {uri} {params}".format(uri=uri, params=params))
+            LOGGER.info("GET request to %s %s", uri, params)
             response = requests.get(uri, stream=True, headers={"x-api-key": self.api_key}, params=params)
             response.raise_for_status()
 

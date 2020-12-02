@@ -9,7 +9,7 @@ def sync(config, state, catalog):
 
     for stream in catalog.get_selected_streams(state):
         tap_stream_id = stream.tap_stream_id
-        LOGGER.info("Syncing stream:" + tap_stream_id)
+        LOGGER.info("Syncing stream: %s", tap_stream_id)
 
         singer.write_schema(
             stream_name=tap_stream_id,
@@ -31,5 +31,3 @@ def sync(config, state, catalog):
                     state = singer.write_bookmark(state, tap_stream_id, 'last_id', item['id'])
                     singer.write_state(state)
                     counter.increment()
-
-    return
