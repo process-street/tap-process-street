@@ -6,9 +6,11 @@ spec](https://github.com/singer-io/getting-started/blob/master/SPEC.md).
 
 This tap:
 
-- Pulls raw data from (http://process.st)
+- Pulls raw data from [Process Street](http://process.st)
+- API documentation [here](https://developer.process.st/)
 - Outputs the schema for each resource
 - Incrementally pulls data based on the input state
+- Supports stream selection but not field selection
 
 ## Background
 
