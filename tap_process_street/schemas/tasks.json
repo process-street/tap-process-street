@@ -9,14 +9,14 @@
       "type": "string",
       "format": "date-time"
     },
-    "createdBy": {
+    "createdById": {
       "type": "string"
     },
     "updatedDate": {
       "type": "string",
       "format": "date-time"
     },
-    "updatedBy": {
+    "updatedById": {
       "type": "string"
     },
     "status": {
@@ -39,7 +39,7 @@
       ],
       "format": "date-time"
     },
-    "completedBy": {
+    "completedById": {
       "type": [
         "null",
         "string"
