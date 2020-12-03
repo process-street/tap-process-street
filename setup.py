@@ -6,7 +6,7 @@ setup(
     version="1.0.0",
     description="Singer.io tap for extracting data from Process Street",
     author="Process Street",
-    url="http://https://www.process.st/",
+    url="http://www.process.st/",
     classifiers=["Programming Language :: Python :: 3 :: Only"],
     py_modules=["tap_process_street"],
     install_requires=[
