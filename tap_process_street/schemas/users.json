@@ -33,7 +33,7 @@
         "Deleted"
       ]
     },
-    "type": {
+    "userType": {
       "type": "string",
       "enum": [
         "Standard",
