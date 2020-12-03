@@ -9,20 +9,20 @@
       "type": "string",
       "format": "date-time"
     },
-    "createdBy": {
+    "createdById": {
       "type": "string"
     },
     "updatedDate": {
       "type": "string",
       "format": "date-time"
     },
-    "updatedBy": {
+    "updatedById": {
       "type": "string"
     },
-    "approvalTask": {
+    "approvalTaskId": {
       "type": "string"
     },
-    "subjectTask": {
+    "subjectTaskId": {
       "type": "string"
     },
     "status": {
@@ -32,7 +32,7 @@
         "Rejected"
       ]
     },
-    "reviewedBy": {
+    "reviewedById": {
       "type": "string"
     },
     "comment": {

@@ -5,6 +5,9 @@
     "id": {
       "type": "string"
     },
+    "stableId": {
+      "type": "string"
+    },
     "name": {
       "type": [
         "null",
@@ -15,14 +18,14 @@
       "type": "string",
       "format": "date-time"
     },
-    "createdBy": {
+    "createdById": {
       "type": "string"
     },
     "updatedDate": {
       "type": "string",
       "format": "date-time"
     },
-    "updatedBy": {
+    "updatedById": {
       "type": "string"
     },
     "templateId": {
@@ -39,9 +42,6 @@
       "type": "boolean"
     },
     "orderTree": {
-      "type": "string"
-    },
-    "stableId": {
       "type": "string"
     }
   }
