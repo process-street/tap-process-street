@@ -5,11 +5,11 @@
     "id": {
       "type": "string"
     },
-    "checklistId": {
-      "type": "string"
-    },
-    "formFieldId": {
-      "type": "string"
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
     },
     "createdDate": {
       "type": "string",
@@ -25,11 +25,24 @@
     "updatedBy": {
       "type": "string"
     },
-    "value": {
-      "type": [
-        "null",
-        "string"
+    "templateId": {
+      "type": "string"
+    },
+    "taskType": {
+      "type": "string",
+      "enum": [
+        "Standard",
+        "Approval"
       ]
+    },
+    "stop": {
+      "type": "boolean"
+    },
+    "orderTree": {
+      "type": "string"
+    },
+    "stableId": {
+      "type": "string"
     }
   }
 }

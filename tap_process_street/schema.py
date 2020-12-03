@@ -4,9 +4,10 @@ import os
 STREAMS = [
     'approvals',
     'checklists',
+    'form-fields',
     'form-field-values',
-    'form-field-widgets',
     'tasks',
+    'task-templates',
     'templates',
     'users'
 ]

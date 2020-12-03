@@ -5,13 +5,10 @@
     "id": {
       "type": "string"
     },
-    "templateId": {
+    "taskTemplateId": {
       "type": "string"
     },
-    "taskGroupId": {
-      "type": "string"
-    },
-    "widgetGroupId": {
+    "stableId": {
       "type": "string"
     },
     "createdDate": {
