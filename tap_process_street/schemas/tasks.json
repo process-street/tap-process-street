@@ -19,6 +19,10 @@
     "updatedById": {
       "type": "string"
     },
+    "updatedOrMigratedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
     "status": {
       "type": "string",
       "enum": [
