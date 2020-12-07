@@ -1,5 +1,5 @@
 ID_KEY = 'id'
-UPDATED_DATE_KEY = 'updated_date'
+UPDATED_DATE_KEY = 'updatedDate'
 
 LIMIT_PARAM = 'limit'
 AFTER_ID_PARAM = 'afterId'

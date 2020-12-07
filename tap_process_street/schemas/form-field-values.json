@@ -25,6 +25,10 @@
     "updatedById": {
       "type": "string"
     },
+    "updatedOrMigratedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
     "value": {
       "type": [
         "null",
