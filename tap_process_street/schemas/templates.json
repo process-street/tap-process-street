@@ -9,7 +9,7 @@
       "type": "string",
       "format": "date-time"
     },
-    "createdBy": {
+    "createdById": {
       "type": "string"
     },
     "description": {
@@ -33,7 +33,7 @@
       "type": "string",
       "format": "date-time"
     },
-    "updatedBy": {
+    "updatedById": {
       "type": "string"
     }
   }
