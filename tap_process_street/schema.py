@@ -38,6 +38,11 @@ STREAMS = {
         'key_properties': [ID_KEY],
         'replication_method': 'INCREMENTAL',
         'replication_keys': [UPDATED_DATE_KEY, ID_KEY]
+    },
+    'users': {
+        'key_properties': [ID_KEY],
+        'replication_method': 'INCREMENTAL',
+        'replication_keys': [UPDATED_DATE_KEY, ID_KEY]
     }
 }
 
