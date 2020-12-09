@@ -54,7 +54,7 @@ def get_abs_path(path):
 def get_schemas():
     schemas = {}
 
-    for stream_name in STREAMS.keys():
+    for stream_name in STREAMS:
         schema_path = get_abs_path('schemas/{}.json'.format(stream_name))
 
         with open(schema_path) as file:
