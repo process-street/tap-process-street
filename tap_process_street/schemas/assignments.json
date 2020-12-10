@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdById": {
+      "type": "string"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedById": {
+      "type": "string"
+    },
+    "assignmentType": {
+      "type": "string"
+    },
+    "checklistId": {
+      "type": "string"
+    },
+    "taskId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "userId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "dueDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    }
+  }
+}
