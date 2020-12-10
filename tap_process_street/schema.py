@@ -9,6 +9,11 @@ STREAMS = {
         'replication_method': 'FULL_TABLE',
         'replication_keys': [UPDATED_DATE_KEY, ID_KEY]
     },
+    'assignments': {
+        'key_properties': [ID_KEY],
+        'replication_method': 'FULL_TABLE',
+        'replication_keys': [UPDATED_DATE_KEY, ID_KEY]
+    },
     'checklists': {
         'key_properties': [ID_KEY],
         'replication_method': 'FULL_TABLE',
