@@ -15,14 +15,12 @@ class ProcessStreet:
         self.uri = domain
         self.page_size = page_size
 
-    def sync_stream(self, path, paramArgs=None):
+    def sync_stream(self, path):
         uri = "{uri}/{path}".format(uri=self.uri, path=path)
 
         has_more = True
         params = {
             LIMIT_PARAM: self.page_size,
-            AFTER_UPDATED_DATE_PARAM: paramArgs['last_updated_date'],
-            AFTER_ID_PARAM: paramArgs['last_id']
         }
 
         while has_more:
