@@ -17,12 +17,11 @@ To set up Process Street in Stitch, you need:
 
 ## Process Street Replication
 
-If pertinent, include details about how the tap replicates data and/or uses the API. As Stitch users are billed for total rows replicated, any info that can shed light on the number of rows replicated or reduce usage is considered necessary.
+The Process Street Tap replicates the entire table for every selected stream.  As such it's advisable to tune what data you load to ensure the replication is fast and to keep costs low.
 
-Examples:
-
-- Replication strategy - attribution/conversion windows ([Google AdWords](https://www.stitchdata.com/docs/integrations/saas/google-adwords#data-extraction-conversion-window)), event-based updates, etc.
-- API usage, especially for services that enforce rate limits or quotas, like Salesforce or [Marketo](https://www.stitchdata.com/docs/integrations/saas/marketo#marketo-daily-api-call-limits)
+- Optionally specify a start_date to only load a subset of your data.
+- Tune your replication frequency to only reload the data when you need it (daily, weekly, monthly). 
+- Only select the streams you need, a lot of customers won't need the form field data for example.
 
 ---
 
@@ -31,50 +30,43 @@ Examples:
 - Table name: Approvals
 - Description: Contains all the task approvals in your organization
 - Primary key column(s): id
-- Replicated fully or incrementally: incrementally
-- Bookmark column(s): id, updatedDate 
+- Replicated fully or incrementally: fully
 - Link to API endpoint documentation: https://developer.process.st/#/paths/~1approvals
 
 - Table name: Checklists
 - Description: Contains all the checklists in your organization
 - Primary key column(s): id
-- Replicated fully or incrementally: incrementally
-- Bookmark column(s): id, updatedDate 
+- Replicated fully or incrementally: fully
 - Link to API endpoint documentation: https://developer.process.st/#/paths/~1checklists/get
 
 - Table name: Form Fields
 - Description: Contains all the form fields from the templates in your organization
 - Primary key column(s): id
-- Replicated fully or incrementally: incrementally
-- Bookmark column(s): id, updatedDate 
+- Replicated fully or incrementally: fully
 - Link to API endpoint documentation: https://developer.process.st/#/paths/~1form-fields/get
 
 - Table name: Form Field Values
 - Description: Contains all the form field values from the checklists in your organization
 - Primary key column(s): id
-- Replicated fully or incrementally: incrementally
-- Bookmark column(s): id, updatedOrMigratedDate 
+- Replicated fully or incrementally: fully
 - Link to API endpoint documentation: https://developer.process.st/#/paths/~1form-field-values/get
 
 - Table name: Tasks
 - Description: Contains all the tasks from the checklists in your organization
 - Primary key column(s): id
-- Replicated fully or incrementally: incrementally
-- Bookmark column(s): id, updatedOrMigratedDate 
+- Replicated fully or incrementally: fully
 - Link to API endpoint documentation: https://developer.process.st/#/paths/~1tasks/get
 
 - Table name: Task Templates
 - Description: Contains all the task templates from the templates in your organization
 - Primary key column(s): id
-- Replicated fully or incrementally: incrementally
-- Bookmark column(s): id, updatedDate 
+- Replicated fully or incrementally: fully
 - Link to API endpoint documentation: https://developer.process.st/#/paths/~1task-templates/get
 
 - Table name: Users
 - Description: Contains all the users in your organization
 - Primary key column(s): id
-- Replicated fully or incrementally: incrementally
-- Bookmark column(s): id, updatedDate 
+- Replicated fully or incrementally: fully
 - Link to API endpoint documentation: https://developer.process.st/#/paths/~1users/get
 
 ---

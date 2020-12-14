@@ -10,9 +10,10 @@ LOGGER = singer.get_logger()
 
 class ProcessStreet:
 
-    def __init__(self, api_key, domain, page_size):
+    def __init__(self, api_key, domain, start_date, page_size):
         self.api_key = api_key
         self.uri = domain
+        self.start_date = start_date
         self.page_size = page_size
 
     def sync_stream(self, path):
@@ -21,6 +22,7 @@ class ProcessStreet:
         has_more = True
         params = {
             LIMIT_PARAM: self.page_size,
+            AFTER_UPDATED_DATE_PARAM: self.start_date,
         }
 
         while has_more:
