@@ -1,5 +1,10 @@
 # tap-process-street
 
+> [!WARNING]
+> **The Process Street Reporting API has been sunset, so this tap no longer works and is no longer maintained.**
+> To get your Process Street data into a BI tool, use the
+> [BI integrations](https://www.process.st/help/docs/bi-integrations/) instead.
+
 This is a [Singer](https://singer.io) tap that produces JSON-formatted data
 following the [Singer
 spec](https://github.com/singer-io/getting-started/blob/master/SPEC.md).
